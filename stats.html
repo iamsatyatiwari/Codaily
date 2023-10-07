@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Two Buttons Side by Side</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button class="user_top" id="user_tab">Codaily&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="images/User-icon.png" alt="User icon"></button>
+
+        </div>
+        <div class="button-container">
+            <button class="button_top" id="random_ques">Random Ques</button>
+            <button class="button_top" id="code">Saved Ques</button>
+        </div>
+        <div class="button-container">
+            
+            <button class="button_link" id="link">Saved Links</button>
+        </div>
+        <div class="user_stats">
+
+          <h1>Your Stats!</h1>
+          <p>No of Questions added:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="add_count">0</span></p>
+          <div class="dashboard"><p>Quesstions done:</p> 
+            <svg>  
+              <circle class="bg" cx="20" cy="20" r="16" />
+              <circle class="meter-1" cx="20" cy="20" r="16" />
+              <text class="percent" id="doneques_count" x="20" y="20">0</text>
+            </svg>
+          </div>
+          <div class="dashboard"><p>Quesstions not done:</p> 
+            <svg>
+              <circle class="bg" cx="20" cy="20" r="16" />
+              <circle class="meter-2" cx="20" cy="20" r="16" />
+              <text class="percent" id="notdone_count" x="20" y="20"></text>
+            </svg>
+          </div>
+          <p>Level:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="rating">0</span></p>
+          <p>Codeforce question done:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="done_count">0</span></p>
+        <div class="stat_reset_button">
+          <button id="reset-stats-confirmation">Reset</button>
+          <button id="reset-stats-button" style="display: none;">Are u sure?</button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="stats.js"></script>
+<script src="scripter.js"></script>
+<script src="per.js"></script>
+
+</html>
